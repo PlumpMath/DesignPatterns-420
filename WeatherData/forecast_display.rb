@@ -8,11 +8,11 @@ class ForecastDisplay
   def show()
     print "Forecast: "
     if @current_pressure > @last_pressure
-      puts "Improving weather on the way!"
+      puts 'Improving weather on the way!'
     elsif @current_pressure == @last_pressure
-      puts "More of the same"
+      puts 'More of the same'
     elsif @current_pressure < @last_pressure
-      puts "Watch out for cooler, rainy weather"
+      puts 'Watch out for cooler, rainy weather'
     end
   end
 
