@@ -14,5 +14,11 @@ class WeatherStation
   weather_data.set_measurements(82.0, 70.0, 29.2)
   weather_data.set_measurements(78.0, 90.0, 29.2)
 
+  weather_data.remove_observer(forecast_display)
+
+  weather_data.set_measurements(78.0, 90.0, 29.2)
+
+
+
 
 end

@@ -6,7 +6,7 @@ module Subject
     @observers << observer
   end
   def remove_observer(observer)
-    @observer.delete(observer)
+    @observers.delete(observer)
   end
   def notify_observers
     @observers.each do |observer|
