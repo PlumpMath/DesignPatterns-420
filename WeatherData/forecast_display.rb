@@ -1,4 +1,3 @@
-require_relative "weather_data"
 require_relative "observer"
 
 class ForecastDisplay
