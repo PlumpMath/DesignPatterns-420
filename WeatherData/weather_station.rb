@@ -7,8 +7,8 @@ class WeatherStation
   weather_data = WeatherData.new
 
   current_display = CurrentConditionsDislay.new(weather_data)
-  forecast_display = ForecastDisplay.new(weather_data)
   statistics_display = StatisticsDisplay.new(weather_data)
+  forecast_display = ForecastDisplay.new(weather_data)
 
   weather_data.set_measurements(80.0, 65.0, 30.4)
   weather_data.set_measurements(82.0, 70.0, 29.2)
