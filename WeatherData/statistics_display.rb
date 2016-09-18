@@ -1,6 +1,8 @@
 require_relative "weather_data"
+require_relative "observer"
 
 class StatisticsDisplay
+  include Observer
   attr_reader :max_temp, :min_temp, :temp_sum, :num_readings, :weather_data
 
   def initialize (max_temp = 0.0, min_temp = 200, temp_sum = 0.0, num_readings = 0, weather_data)
@@ -8,8 +10,9 @@ class StatisticsDisplay
     @min_temp = min_temp
     @temp_sum  = temp_sum
     @num_readings = num_readings
-    @weather_data = weather_data
-    @weather_data.register_observer(self)
+    super(weather_data)
+    #@weather_data = weather_data
+    #@weather_data.register_observer(self)
   end
 
   def show()

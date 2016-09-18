@@ -1,13 +1,16 @@
 require_relative "weather_data"
+require_relative "observer"
 
 class ForecastDisplay
+  include Observer
   attr_accessor :current_pressure, :last_pressure, :weather_data
 
   def initialize (current_pressure = 29.28, last_pressure = 0.0,  weather_data)
     @current_pressure = current_pressure
     @last_pressure = last_pressure
-    @weather_data = weather_data
-    @weather_data.register_observer(self)
+    super(weather_data)
+    #@weather_data = weather_data
+    #@weather_data.register_observer(self)
   end
 
   def show()
