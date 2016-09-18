@@ -3,8 +3,7 @@ require_relative "subject"
 class WeatherData
   include Subject
 
-  attr_reader :temperature, :humidity, :pressure
-  attr_accessor :observers
+  attr_accessor :temperature, :humidity, :pressure, :observer
 
   def set_measurements(temperature, humidity, pressure)
     @temperature = temperature
