@@ -3,7 +3,7 @@ require_relative "observer"
 
 class StatisticsDisplay
   include Observer
-  attr_reader :max_temp, :min_temp, :temp_sum, :num_readings, :weather_data
+  attr_accessor :max_temp, :min_temp, :temp_sum, :num_readings, :weather_data
 
   def initialize (max_temp = 0.0, min_temp = 200, temp_sum = 0.0, num_readings = 0, weather_data)
     @max_temp = max_temp
