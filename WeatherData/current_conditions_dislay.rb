@@ -6,7 +6,7 @@ class CurrentConditionsDislay
   attr_accessor :temperature, :humidity
 
   def show()
-    print "Curruent conditions: ", @temperature, " F degrees and ", @humidity, "% humidity\n"
+    puts "Curruent conditions: #{@temperature}F degrees and #{@humidity}% humidity"
   end
 
   def update (temperature, humidity, pressure)

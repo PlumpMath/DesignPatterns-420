@@ -1,4 +1,3 @@
-require_relative "weather_data"
 require_relative "observer"
 
 class StatisticsDisplay
@@ -14,7 +13,7 @@ class StatisticsDisplay
   end
 
   def show()
-    print "Avg/Max/Min temperature = ", (@temp_sum / @num_readings), "/", @max_temp, "/", @min_temp, "\n"
+    puts "Avg/Max/Min temperature = #{@temp_sum / @num_readings}/#{@max_temp}/#{@min_temp}"
   end
 
   def update(temperature, humidity, pressure)
