@@ -11,8 +11,6 @@ class StatisticsDisplay
     @temp_sum  = temp_sum
     @num_readings = num_readings
     super(weather_data)
-    #@weather_data = weather_data
-    #@weather_data.register_observer(self)
   end
 
   def show()

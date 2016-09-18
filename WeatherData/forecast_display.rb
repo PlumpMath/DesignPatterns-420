@@ -9,8 +9,6 @@ class ForecastDisplay
     @current_pressure = current_pressure
     @last_pressure = last_pressure
     super(weather_data)
-    #@weather_data = weather_data
-    #@weather_data.register_observer(self)
   end
 
   def show()
