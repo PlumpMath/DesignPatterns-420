@@ -1,4 +1,4 @@
-require_relative "pizza"
+require_relative 'pizza'
 
 class NYStyleCheesePizza < Pizza
 
