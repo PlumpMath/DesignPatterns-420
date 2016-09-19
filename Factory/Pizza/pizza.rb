@@ -1,5 +1,5 @@
 class Pizza
-  attr_accessor :name, :dough, :sauce, :toppings[]
+  attr_accessor :name, :dough, :sauce, :toppings
 
   def Prepare
     puts "Prepare: #{@name}"
