@@ -7,8 +7,8 @@ require_relative 'ny_style_pepperoni_pizza'
 
 class NYPizzaStore < PizzaStore
 
-  def CreatePizza(item)
-    case @item
+  def createPizza(item)
+    case item
       when 'cheese'
         return NYStyleCheesePizza.new
       when 'veggie'
