@@ -4,11 +4,11 @@ require_relative 'ny_pizza_store'
 class PizzaStore < Pizza
   attr_accessor :pizza
 
-  def CreatePizza(item)
+  def createPizza(type)
   end
 
-  def OrderPizza(type)
-    @pizza = CreatePizza(type)
+  def orderPizza(type)
+    @pizza = createPizza(type)
     puts "--- Making a #{@pizza.getName} ---"
     @pizza.prepare
     @pizza.bake
